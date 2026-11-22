@@ -1,99 +1,327 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Seán Mac Ginnea - Business Information Systems student at University College Cork, interested in data analytics, business intelligence and operations.">
 
-<title>Seán Mac Ginnea | CV</title>
+    <title>Seán Mac Ginnea | Portfolio & CV</title>
 
-<style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-margin:0;
-background:#f4f6f8;
-color:#333;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:20px;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
 
-.header{
-display:flex;
-align-items:center;
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-margin-bottom:20px;
-}
+        a {
+            color: #005a9c;
+        }
 
-.profile-photo{
-width:160px;
-height:160px;
-border-radius:50%;
-object-fit:center;
-margin-right:30px;
-border:4px solid #003366;
-}
+        a:hover {
+            color: #003366;
+        }
 
-.header-text h1{
-margin:0;
-color:#003366;
-}
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
 
-.header-text p{
-margin-top:10px;
-font-size:18px;
-}
+        /* HEADER */
 
-.section{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
 
-h2{
-color:#003366;
-border-bottom:2px solid #eee;
-padding-bottom:5px;
-}
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #003366;
+            flex-shrink: 0;
+        }
 
-.two-column{
-display:grid;
-grid-template-columns:1fr 2fr;
-gap:30px;
-}
+        .header-text h1 {
+            margin: 0;
+            color: #003366;
+            font-size: 32px;
+        }
 
-.job{
-margin-bottom:15px;
-}
+        .subtitle {
+            color: #005a9c;
+            font-size: 17px;
+            font-weight: bold;
+            margin: 8px 0;
+        }
 
-table{
-width: 20%;
-border-collapse:collapse;
-margin-top:2px;
-}
+        .intro {
+            margin-top: 12px;
+            max-width: 750px;
+        }
 
-table th, table td{
-padding:2px;
-border:1px solid #ddd;
-text-align:center;
-}
+        /* NAVIGATION */
 
-table th{
-background:#003366;
-color:white;
-}
+        .navigation {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
 
-</style>
+        .navigation a {
+            text-decoration: none;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            color: #003366;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .navigation a:hover {
+            background: #003366;
+            color: white;
+        }
+
+        /* MAIN LAYOUT */
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #e5eaf0;
+            padding-bottom: 8px;
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        h3 {
+            color: #003366;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-top: 8px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* SKILLS */
+
+        .skill-group {
+            margin-bottom: 20px;
+        }
+
+        .skill-group h3 {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #e8f0f8;
+            color: #003366;
+            padding: 6px 10px;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* EDUCATION AND EXPERIENCE */
+
+        .entry {
+            margin-bottom: 25px;
+        }
+
+        .entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 5px 15px;
+        }
+
+        .entry-header h3 {
+            margin: 0;
+        }
+
+        .date {
+            color: #667085;
+            font-size: 13px;
+        }
+
+        .role {
+            color: #555;
+            font-weight: bold;
+            margin: 5px 0 10px;
+        }
+
+        .muted {
+            color: #667085;
+            font-size: 14px;
+        }
+
+        /* PROJECTS */
+
+        .project {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .project-type {
+            font-size: 13px;
+            color: #667085;
+            margin: 5px 0;
+        }
+
+        .project ul {
+            margin-bottom: 10px;
+        }
+
+        /* CONTACT */
+
+        .contact-item {
+            margin-bottom: 15px;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #003366;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #667085;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 25px 20px;
+            }
+
+            .profile-photo {
+                margin: 0;
+            }
+
+            .header-text h1 {
+                font-size: 27px;
+            }
+
+            .navigation {
+                justify-content: center;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .container {
+                padding: 12px;
+            }
+        }
+
+        /* PRINTING */
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .header,
+            .section {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+
+            .navigation,
+            footer {
+                display: none;
+            }
+
+            .two-column {
+                display: block;
+            }
+
+            .section,
+            .project,
+            .entry {
+                break-inside: avoid;
+            }
+        }
+    </style>
 
 </head>
 
@@ -101,132 +329,581 @@ color:white;
 
 <div class="container">
 
-<div class="header">
+    <!-- HEADER -->
 
-<img src="1000014802.jpg" class="profile-photo">
+    <header class="header">
 
-<div class="header-text">
-<h1>Seán Mac Ginnea</h1>
-<p>Business Information Systems Student | Business, Data & Technology</p>
+        <img
+            src="1000014802.jpg"
+            class="profile-photo"
+            alt="Profile photograph of Seán Mac Ginnea"
+        >
 
-<p>
-First-year BIS student at University College Cork with strong academic results and several years of retail experience. Interest in data analysis, technology and software development.
-</p>
+        <div class="header-text">
+
+            <h1>Seán Mac Ginnea</h1>
+
+            <p class="subtitle">
+                Business Information Systems Student |
+                Data Analytics & Operations
+            </p>
+
+            <p class="intro">
+                Second-year Business Information Systems student
+                at University College Cork, with practical
+                experience in inventory management, stock control
+                and operational processes.
+
+                Developing technical skills in Python, SQL,
+                Microsoft Excel and Power BI, with a particular
+                interest in data analytics, business intelligence,
+                production planning and process improvement.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navigation">
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <div class="two-column">
+
+        <!-- LEFT COLUMN -->
+
+        <aside>
+
+            <!-- TECHNICAL SKILLS -->
+
+            <section class="section" id="skills">
+
+                <h2>Technical Skills</h2>
+
+                <div class="skill-group">
+
+                    <h3>Data Analysis & Reporting</h3>
+
+                    <div class="skill-list">
+                        <span class="skill">Microsoft Excel</span>
+                        <span class="skill">PivotTables</span>
+                        <span class="skill">Power BI</span>
+                        <span class="skill">Data Visualisation</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-group">
+
+                    <h3>Programming & Automation</h3>
+
+                    <div class="skill-list">
+                        <span class="skill">Python</span>
+                        <span class="skill">Automation Scripts</span>
+                        <span class="skill">Input Validation</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-group">
+
+                    <h3>Databases</h3>
+
+                    <div class="skill-list">
+                        <span class="skill">SQL</span>
+                        <span class="skill">SQLite</span>
+                        <span class="skill">Database Queries</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-group">
+
+                    <h3>Development</h3>
+
+                    <div class="skill-list">
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">Flask</span>
+                        <span class="skill">Git / GitHub</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-group">
+
+                    <h3>Business & Operations</h3>
+
+                    <div class="skill-list">
+                        <span class="skill">Inventory Control</span>
+                        <span class="skill">Stock Auditing</span>
+                        <span class="skill">Process Analysis</span>
+                        <span class="skill">POS Systems</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROFESSIONAL SKILLS -->
+
+            <section class="section">
+
+                <h2>Professional Skills</h2>
+
+                <ul>
+                    <li>Analytical problem-solving</li>
+                    <li>Attention to detail</li>
+                    <li>Team collaboration</li>
+                    <li>Time management</li>
+                    <li>Organisation</li>
+                    <li>Communication</li>
+                    <li>Adaptability</li>
+                </ul>
+
+            </section>
+
+
+            <!-- LANGUAGES -->
+
+            <section class="section">
+
+                <h2>Languages</h2>
+
+                <ul>
+                    <li>English - Fluent</li>
+                    <li>Irish - Fluent</li>
+                    <li>Spanish - Intermediate</li>
+                </ul>
+
+            </section>
+
+
+            <!-- CONTACT -->
+
+            <section class="section" id="contact">
+
+                <h2>Contact</h2>
+
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <a href="mailto:smacginnea@email.com">
+                        smacginnea@email.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Phone</strong>
+                    <a href="tel:+353833340895">
+                        +353 83 334 0895
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Location</strong>
+                    Ireland
+                </div>
+
+                <!-- Replace YOUR_USERNAME with your GitHub username -->
+
+                <div class="contact-item">
+                    <strong>GitHub</strong>
+                    <a href="https://github.com/YOUR_USERNAME"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View my GitHub
+                    </a>
+                </div>
+
+            </section>
+
+        </aside>
+
+
+        <!-- RIGHT COLUMN -->
+
+        <main>
+
+            <!-- EDUCATION -->
+
+            <section class="section" id="education">
+
+                <h2>Education</h2>
+
+                <div class="entry">
+
+                    <div class="entry-header">
+                        <h3>University College Cork</h3>
+                        <span class="date">2025 - Present</span>
+                    </div>
+
+                    <p class="role">
+                        BSc Business Information Systems
+                    </p>
+
+                    <p>Second-Year Student</p>
+
+                    <p>
+                        Combining business management principles
+                        with programming, information systems,
+                        databases and analytical problem-solving.
+                    </p>
+
+                    <p><strong>Relevant Areas of Study:</strong></p>
+
+                    <ul>
+                        <li>Programming with Python</li>
+                        <li>Database Management and SQL</li>
+                        <li>Systems Analysis and Design</li>
+                        <li>Business Process Analysis</li>
+                        <li>Data Analysis and Information Systems</li>
+                    </ul>
+
+                </div>
+
+                <hr>
+
+                <div class="entry">
+
+                    <div class="entry-header">
+                        <h3>Pobalscoil Chorca Dhuibhne</h3>
+                        <span class="date">2019 - 2025</span>
+                    </div>
+
+                    <p class="role">
+                        Leaving Certificate - 531 Points
+                    </p>
+
+                    <p>
+                        Studied Higher Level Mathematics,
+                        Biology, Chemistry, English,
+                        Irish, Spanish and Music.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- UNIVERSITY PROJECTS -->
+
+            <section class="section" id="projects">
+
+                <h2>Technical & Academic Projects</h2>
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project">
+
+                    <h3>Python Inventory Management System</h3>
+
+                    <p class="project-type">
+                        Python | Inventory Control | Automation
+                    </p>
+
+                    <p>
+                        Developed a Python-based inventory
+                        management application to organise
+                        product records, monitor stock levels
+                        and support inventory control.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Implemented functions for adding,
+                            removing and updating product records.
+                        </li>
+
+                        <li>
+                            Developed stock monitoring and
+                            low-stock alert functionality.
+                        </li>
+
+                        <li>
+                            Added inventory value calculations
+                            and formatted inventory reports.
+                        </li>
+
+                        <li>
+                            Used input validation and
+                            error-handling logic to improve
+                            reliability and data accuracy.
+                        </li>
+                    </ul>
+
+                    <p>
+                        <strong>Skills Demonstrated:</strong>
+                        Python programming, automation,
+                        inventory analysis and problem-solving.
+                    </p>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project">
+
+                    <h3>Business Data Value Mapping</h3>
+
+                    <p class="project-type">
+                        Business Analysis | Data Strategy |
+                        Process Improvement
+                    </p>
+
+                    <p>
+                        Analysed the use of business information
+                        within McKenna's of Dingle, exploring
+                        how operational and customer data could
+                        support more informed decision-making.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Examined sales, inventory and
+                            customer information processes.
+                        </li>
+
+                        <li>
+                            Considered POS records, inventory
+                            information and Shopify analytics
+                            as potential data sources.
+                        </li>
+
+                        <li>
+                            Identified opportunities to improve
+                            reporting, customer insights and
+                            business processes.
+                        </li>
+
+                        <li>
+                            Developed a Data Value Map
+                            connecting business objectives
+                            with relevant data sources.
+                        </li>
+                    </ul>
+
+                    <p>
+                        <strong>Skills Demonstrated:</strong>
+                        Business analysis, data interpretation,
+                        process mapping and operational improvement.
+                    </p>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project">
+
+                    <h3>Flask & SQLite Web Application</h3>
+
+                    <p class="project-type">
+                        Python | Flask | SQL | Web Development
+                    </p>
+
+                    <p class="muted">
+                        In Progress
+                    </p>
+
+                    <p>
+                        Developing a database-backed web
+                        application using Flask and SQLite
+                        to practise server-side development
+                        and structured data management.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Building Flask routes to display,
+                            create and edit database records.
+                        </li>
+
+                        <li>
+                            Connecting application logic
+                            with an SQLite database.
+                        </li>
+
+                        <li>
+                            Working with HTML templates,
+                            form handling and application
+                            error management.
+                        </li>
+                    </ul>
+
+                    <p>
+                        <strong>Skills Demonstrated:</strong>
+                        Python, SQL, database integration
+                        and web application development.
+                    </p>
+
+                </article>
+
+            </section>
+
+
+            <!-- WORK EXPERIENCE -->
+
+            <section class="section" id="experience">
+
+                <h2>Work Experience</h2>
+
+
+                <div class="entry">
+
+                    <div class="entry-header">
+                        <h3>Dingle Woollen Company</h3>
+                        <span class="date">2020 - Present</span>
+                    </div>
+
+                    <p class="role">Retail Assistant</p>
+
+                    <ul>
+
+                        <li>
+                            Monitored stock levels and assisted
+                            with inventory replenishment to
+                            maintain product availability.
+                        </li>
+
+                        <li>
+                            Supported inventory organisation,
+                            merchandising and efficient
+                            day-to-day store operations.
+                        </li>
+
+                        <li>
+                            Processed POS transactions
+                            accurately in a high-volume
+                            retail environment.
+                        </li>
+
+                        <li>
+                            Collaborated with colleagues to
+                            maintain operational efficiency
+                            during peak tourist seasons.
+                        </li>
+
+                        <li>
+                            Regularly assisted over 100
+                            customers per shift during
+                            busy trading periods.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <hr>
+
+
+                <div class="entry">
+
+                    <div class="entry-header">
+                        <h3>McKenna's of Dingle</h3>
+                        <span class="date">2020 - Present</span>
+                    </div>
+
+                    <p class="role">Retail Assistant</p>
+
+                    <ul>
+
+                        <li>
+                            Conducted inventory checks and
+                            stock audits to support accurate
+                            product records and stock control.
+                        </li>
+
+                        <li>
+                            Prepared, packaged and dispatched
+                            customer orders with attention
+                            to accuracy and detail.
+                        </li>
+
+                        <li>
+                            Used POS systems to process
+                            transactions and support
+                            daily retail operations.
+                        </li>
+
+                        <li>
+                            Assisted with product organisation
+                            and stock handling to support
+                            efficient store workflows.
+                        </li>
+
+                        <li>
+                            Worked collaboratively with
+                            team members during high-demand
+                            periods.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <!-- CAREER INTERESTS -->
+
+            <section class="section">
+
+                <h2>Career Interests</h2>
+
+                <p>
+                    I am particularly interested in
+                    applying information systems and
+                    data analytics to practical business
+                    and operational challenges.
+                </p>
+
+                <p>
+                    Areas of interest include business
+                    intelligence, operational reporting,
+                    supply chain analytics, production
+                    planning and business process automation.
+                </p>
+
+                <p>
+                    I am keen to develop these skills
+                    through industry experience, particularly
+                    in technology-driven and manufacturing
+                    environments.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>
+            &copy; 2026 Seán Mac Ginnea |
+            Business Information Systems |
+            University College Cork
+        </p>
+    </footer>
 
 </div>
 
-</div>
+</body>
+</html>
 
-<div class="two-column">
-
-<div>
-
-<div class="section">
-
-<h2>Skills</h2>
-
-<ul>
-<li>Python</li>
-<li>Web Development</li>
-<li>Microsoft Excel</li>
-<li>POS Systems</li>
-<li>Customer Service</li>
-<li>Stock Management</li>
-<li>Team Collaboration</li>
-</ul>
-
-</div>
-
-<div class="section">
-
-<h2>Contact</h2>
-
-<p>Email: smacginnea@email.com</p>
-<p>Phone: +353 83 334 0895</p>
-<p>Location: Ireland</p>
-
-</div>
-
-</div>
-
-<div>
-
-<div class="section">
-
-<h2>Education</h2>
-
-<p><strong>University College Cork</strong></p>
-<p>Business Information Systems (2025–Present)</p>
-<hr>
-<p><strong>Pobalscoil Chorca Dhuibhne (2019-2025)</strong></p>
-<p>Leaving Certificate: <strong>531 points</strong></p>
-
-<table>
-
-<tr>
-<th>Subject</th>
-<th>Level</th>
-<th>Grade</th>
-</tr>
-
-<tr><td>English</td><td>Higher</td><td>H2</td></tr>
-<tr><td>Biology</td><td>Higher</td><td>H2</td></tr>
-<tr><td>Chemistry</td><td>Higher</td><td>H3</td></tr>
-<tr><td>Music</td><td>Higher</td><td>H2</td></tr>
-<tr><td>Irish</td><td>Higher</td><td>H2</td></tr>
-<tr><td>Maths</td><td>Higher</td><td>H3</td></tr>
-<tr><td>Spanish</td><td>Higher</td><td>H2</td></tr>
-
-</table>
-
-
-
-<hr>
-<p><strong>Scoil Iognáid Rís (2014-2019)</strong></p>
-</div>
-<div class="section">
-
-<h2>Work Experience</h2>
-
-<div class="job">
-
-<h3>Dingle Woollen Company</h3>
-
-<p><strong>Retail Assistant | 2020–Present</strong></p>
-
-<ul>
-<li>Handled POS transactions and cash management</li>
-<li>Maintained inventory and stock management</li>
-<li>Provided high quality customer service</li>
-<li>Served 100+ customers during busy tourist periods</li>
-
-</ul>
-
-</div>
-
-<div class="job">
-
-<h3>McKenna's Dingle</h3>
-
-<p><strong>Retail Assistant | 2020–Present</strong></p>
-
-<ul>
-<li>Operated POS systems</li>
-<li>Completed stock audits</li>
-<li>Prepared and dispatched customer orders</li>
-<li>Assisted customers with product selection</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 </body>
 
