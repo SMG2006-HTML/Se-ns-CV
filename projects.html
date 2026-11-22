@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08182d">
+  <meta name="description" content="Explore Seán Mac Ginnea's projects in Python, SQL, Flask, systems design, business analysis and web development.">
+  <title>Projects — Seán Mac Ginnea</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav-shell">
+      <a href="index.html" class="brand" aria-label="Seán Mac Ginnea — Home"><span class="brand-icon" aria-hidden="true">SMG<span>.</span></span><span class="brand-name">Seán Mac Ginnea</span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="index.html#experience">Experience</a><a href="contact.html" class="nav-contact">Let's connect <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="overline on-dark">PROJECT PORTFOLIO / 2026</p>
+        <h1>From ideas to <em>working solutions.</em></h1>
+        <p>A selection of university and independent work that reflects my growing experience in programming, data, systems analysis and process improvement. Each project shows what I worked on and what I learned.</p>
+        <div class="page-kicker"><span>Software & programming</span><span>Business & data</span><span>Systems design</span></div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <div class="wrap">
+        <div class="filter-row">
+          <p data-count aria-live="polite">6 projects shown</p>
+          <div class="filter-buttons" aria-label="Filter projects by category">
+            <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All projects</button>
+            <button class="filter-button" type="button" data-filter="programming" aria-pressed="false">Programming</button>
+            <button class="filter-button" type="button" data-filter="analysis" aria-pressed="false">Data & analysis</button>
+            <button class="filter-button" type="button" data-filter="design" aria-pressed="false">Systems & design</button>
+          </div>
+        </div>
+        <div class="project-grid">
+          <article class="work-card" id="inventory" data-category="programming analysis">
+            <div class="work-visual"><div class="work-visual-icon" aria-hidden="true">{ }</div></div>
+            <div class="work-body">
+              <div class="work-meta"><span>Python</span><span>Stock control</span><span>University project</span></div>
+              <h2>Inventory Management System</h2>
+              <p>A command-line application designed around a practical retail problem: keeping product records accurate and making stock information easier to work with.</p>
+              <h3>My contribution</h3>
+              <ul>
+                <li>Built functions for adding and removing products, adjusting stock levels and viewing inventory.</li>
+                <li>Implemented input validation, inventory value calculations and low-stock warnings.</li>
+                <li>Organised the application using reusable functions and consistent product data structures.</li>
+              </ul>
+              <div class="work-footer"><small>Skills: Python · data validation · business logic</small></div>
+            </div>
+          </article>
+          <article class="work-card" id="data-value-map" data-category="analysis design">
+            <div class="work-visual"><div class="work-visual-icon" aria-hidden="true">↗</div></div>
+            <div class="work-body">
+              <div class="work-meta"><span>Business analysis</span><span>Data strategy</span><span>University project</span></div>
+              <h2>Data Value Mapping — McKenna's of Dingle</h2>
+              <p>Explored how an established retail business could make better use of the data it already collects to support decisions and strengthen customer engagement.</p>
+              <h3>My contribution</h3>
+              <ul>
+                <li>Examined the sales and customer-information process, using business knowledge and available data sources.</li>
+                <li>Considered how POS records, stock information and Shopify analytics relate to business objectives.</li>
+                <li>Developed a Data Value Map and recommendations for reporting and customer follow-up.</li>
+              </ul>
+              <div class="work-footer"><small>Skills: process analysis · data mapping · communication</small></div>
+            </div>
+          </article>
+          <article class="work-card" id="flask" data-category="programming analysis">
+            <div class="work-visual"><div class="work-visual-icon" aria-hidden="true">DB</div></div>
+            <div class="work-body">
+              <div class="work-meta"><span>Flask</span><span>SQLite</span><span>In progress</span></div>
+              <h2>Database-Backed Web Application</h2>
+              <p>An ongoing Flask project focused on understanding the relationship between web routes, forms, templates and a relational database.</p>
+              <h3>What I'm working on</h3>
+              <ul>
+                <li>Using Flask routes and Jinja templates to display information and handle user input.</li>
+                <li>Connecting application logic with SQLite to store and retrieve records.</li>
+                <li>Practising create/edit workflows, validation, error handling and application testing.</li>
+              </ul>
+              <div class="work-footer"><small>Skills: Python · Flask · SQL · debugging</small></div>
+            </div>
+          </article>
+          <article class="work-card" id="gaa-platform" data-category="analysis design">
+            <div class="work-visual"><div class="work-visual-icon" aria-hidden="true">◇</div></div>
+            <div class="work-body">
+              <div class="work-meta"><span>Systems analysis</span><span>UX</span><span>Group project</span></div>
+              <h2>GAA Club Digital Platform — Design Project</h2>
+              <p>Collaborated on the design of a proposed platform to support club administration and player engagement. The work focused on system design artefacts rather than a completed production application.</p>
+              <h3>My contribution</h3>
+              <ul>
+                <li>Worked with the team on use cases, user-facing wireframes and operational workflows.</li>
+                <li>Helped define business logic for attendance tracking, player progress and eligibility rules.</li>
+                <li>Communicated design decisions through artefacts and project presentations.</li>
+              </ul>
+              <div class="work-footer"><small>Skills: requirements · wireframing · teamwork</small></div>
+            </div>
+          </article>
+          <article class="work-card" id="cv-site" data-category="programming design">
+            <div class="work-visual"><div class="work-visual-icon" aria-hidden="true">&lt;/&gt;</div></div>
+            <div class="work-body">
+              <div class="work-meta"><span>HTML</span><span>CSS</span><span>Personal project</span></div>
+              <h2>CV & Portfolio Website</h2>
+              <p>This website is an ongoing personal project to present my experience and work clearly in a responsive, accessible format.</p>
+              <h3>What it includes</h3>
+              <ul>
+                <li>A three-page website with a consistent design system, navigation and responsive layouts.</li>
+                <li>Project filtering and small interactive features implemented in JavaScript.</li>
+                <li>Static hosting through GitHub Pages, with source control managed in GitHub.</li>
+              </ul>
+              <div class="work-footer"><small>Skills: HTML · CSS · JavaScript · GitHub</small><a href="https://github.com/SMG2006-HTML/Se-ns-CV" target="_blank" rel="noopener noreferrer">View website repository ↗</a></div>
+            </div>
+          </article>
+          <article class="work-card" id="unity" data-category="programming design">
+            <div class="work-visual"><div class="work-visual-icon" aria-hidden="true">C#</div></div>
+            <div class="work-body">
+              <div class="work-meta"><span>Unity</span><span>C#</span><span>Learning project</span></div>
+              <h2>Unity First-Person Controller Prototype</h2>
+              <p>Explored object-oriented programming and real-time input handling through a small first-person game prototype.</p>
+              <h3>What I worked on</h3>
+              <ul>
+                <li>Used Unity's Input System and C# scripts to process player movement and jump input.</li>
+                <li>Practised organising gameplay logic across player and input-management classes.</li>
+                <li>Debugged interaction between input events and movement behaviour.</li>
+              </ul>
+              <div class="work-footer"><small>Skills: C# · object-oriented programming · debugging</small></div>
+            </div>
+          </article>
+        </div>
+        <p class="work-note"><strong>About the projects:</strong> Some entries are coursework or works in progress. The descriptions distinguish design work from implemented features, and I can discuss my contribution and learning in more detail.</p>
+      </div>
+    </section>
+    <section class="closing-cta"><div class="wrap cta-inner"><div><p class="overline on-dark">NEXT STEPS</p><h2>Let's put these skills <em>to work.</em></h2><p>I'm interested in opportunities to learn from experienced teams while contributing to meaningful work in analytics, software and business systems.</p></div><a href="contact.html" class="button button-primary">Contact me <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-layout"><div class="footer-identity"><span class="footer-monogram">SMG.</span><div><strong>Seán Mac Ginnea</strong><p>Business Information Systems · UCC</p></div></div><nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a href="https://github.com/SMG2006-HTML" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav><span class="copyright">© <span data-year>2026</span> Seán Mac Ginnea</span></div></footer>
+</body>
+</html>

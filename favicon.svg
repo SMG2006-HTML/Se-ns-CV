@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="SMG monogram">
+  <rect width="120" height="120" rx="25" fill="#08182d"/>
+  <rect x="9" y="9" width="102" height="102" rx="19" fill="none" stroke="#75bff9" stroke-width="3"/>
+  <text x="60" y="75" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="700" letter-spacing="-4" text-anchor="middle" fill="#ffffff">SMG</text>
+</svg>
